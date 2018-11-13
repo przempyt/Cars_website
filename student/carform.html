@@ -1,0 +1,101 @@
+
+        <fieldset>
+            <legend>Car details</legend>
+
+
+            <form action="addCar" method="post">
+                <table>
+
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td>Manufacturer</td>
+                        <td><input type="text" name="manufacturer"></td>
+                    </tr> -->
+                    <tr>
+                        <td>Manufacturer</td>
+                        <td><select name="manufacturer" size="5" required>
+
+                            <option value="BMW">Scifi</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Aston Martin">Aston Martin</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Bugatti">Bugatti</option>
+                            <option value="Bentley">Bentley</option>
+                            <option value="Cadillac">Cadillac</option>
+                            <option value="Dodge">Dodge</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Subaru">Subaru</option>
+                            <option value="Mustang">Mustang</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Camaro">Camaro</option>
+                            <option value="Land Rover">Land Rover</option>
+                            <option value="Holden">Holden</option>
+                            <option value="Lotus">Lotus</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Range Rover">Range Rover</option>
+                            <option value="Alfa Romeo">Alfa Romeo</option>
+                            <option value="Citroën">Citroën</option>
+                            <option value="Vauxhall">Vauxhall</option>
+                            <option value="Maserati">Maserati</option>
+                            <option value="Jeep">Jeep</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Pagani">Pagani</option>
+                            <option value="Tesla">Tesla</option>
+                            <option value="Hummer">Hummer</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Corvette">Corvette</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Consumption (in l/100km)</td>
+                    <td><input type="number" name="consumption" step="0.01" min="0" required></td>
+                </tr>
+
+                <tr>
+                    <td>Color</td>
+                    <td><input type="color" name="color" required></td>
+                </tr>
+
+                <tr>
+                    <td>Available</td>
+                    <td><input type="number" name="available" required></td>
+                </tr>
+
+                <tr>
+                    <td>Year of production</td>
+                    <td><input type="number" name="year" max="3000" required></td>
+                </tr>
+
+                <tr>
+                    <td>Horsepower</td>
+                    <td><input type="number" name="horsepower" required></td>
+                </tr>
+
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Add car"></td>
+        </tr>
+    </table>
+
+
+</form>
+</fieldset>
