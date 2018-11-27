@@ -1,15 +1,17 @@
+
 {
-  "name": "Cars_website",
+  "name": "webtech2",
   "version": "0.0.0",
-  "description": "Cars_website",
+  "description": "webtech2",
   "main": "app.js",
   "author": {
-    "name": "Przemyslaw Pytel"
+    "name": "Sátán Ádám"
   },
   "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "cookie-parser": "^1.4.3"
   }
 }

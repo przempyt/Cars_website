@@ -1,17 +1,28 @@
 $(function () {
-	$('form').on('submit', function (e) {
+	$("#manuform").on('submit', function (e) {
 		e.preventDefault();
 
 		$.ajax({
 			type:"post",
 			url: 'addManufacturers',
-			data: $('form').serialize(),
+			data: $("#manuform").serialize(),
 			success: function (data){
-				loadManuf();
+				alert("Manufacturer added successfully");
+			//	loadManuf();
 			},
 			error: function () {
-				alert("oopsyyy");
+				alert("oopsyyy :/ cannot add manufacturer");
 			}
 		})
 	})
 });
+
+function testing(){
+	alert("testing function from manufform.js");
+}
+
+// $( "#manuform" ).submit(function( event ) {
+// 	event.preventDefault();
+//   alert( "Handler for .submit() called." );
+  
+// });

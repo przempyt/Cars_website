@@ -4,17 +4,46 @@ function inform(){
 
 
 $(document).ready(function(){
-	$("#addcar").click(function(){
-		// $("#content").empty();
-		$("#content").load("carform.html");
 
-		
+	$("#addcarBTN").click(function(){
+		$("#content").css("display", "none");
+		$("#carfield").css("display", "inline");
+		$("#manufield").css("display", "none");
+		$("#carform").load("carform.html");
 	});
+
+	$("#addmanufBTN").click(function(){
+		//$("#content").empty();
+		$("#content").css("display", "none");
+		$("#carfield").css("display", "none");
+		$("#manufield").css("display", "inline");
+		$("#manuform").load("manufform.html");
+	});
+
+	$("#showcarsBTN").click(function(){
+		$("#content").css("display", "inline");
+		$("#carfield").css("display", "none");
+		$("#manufield").css("display", "none");
+		loadCars();
+		//$("#carform").hide();
+	});
+
+	$("#showmanufBTN").click(function(){
+		$("#content").css("display", "inline");
+		$("#carfield").css("display", "none");
+		$("#manufield").css("display", "none");
+		loadManuf();
+	});
+
+	$("#homeBTN").click(function(){
+		$("#content").css("display", "inline");
+		$("#carfield").css("display", "none");
+		$("#manufield").css("display", "none");
+		$("#content").load("index.html #content");
+	});
+
 	
 });
-
-
-
 
 
 

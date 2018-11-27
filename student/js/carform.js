@@ -1,17 +1,22 @@
-$(function () {
-	$('form').on('submit', function (e) {
-		e.preventDefault();
+    $(function () {
+        $("#carform").on('submit', function (e) {
+            e.preventDefault();
 
-		$.ajax({
-			type:"post",
-			url: 'addCar',
-			data: $('form').serialize(),
-			success: function (data){
-				loadCars();
-			},
-			error: function () {
-				alert("oops, probably this name already exists");
-			}
-		})
-	})
-});
+            $.ajax({
+                type: "POST",
+                url: "addCar",
+                data: $("#carform").serialize(),
+                success: function (data){
+                    alert("Car added successfully");
+                },
+                error: function () {
+                    // alert("oops, probably this name already exists");
+                    alert("oopsyyy :/ cannot add car");
+                }
+            })
+        })
+    });
+
+    function inform(){
+        alert("inform2");
+    }
