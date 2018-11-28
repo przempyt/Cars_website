@@ -10,13 +10,8 @@
                     alert("Car added successfully");
                 },
                 error: function () {
-                    // alert("oops, probably this name already exists");
-                    alert("oopsyyy :/ cannot add car");
+                    alert("oopsyyy :/ name already exists");
                 }
             })
         })
     });
-
-    function inform(){
-        alert("inform2");
-    }

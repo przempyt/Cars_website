@@ -1,5 +1,10 @@
 function inform(){
-	alert("inform");
+	alert("Never click on this button!");
+}
+
+function showDate(){
+	var d = Date();
+	alert('Current date: \n' + d);
 }
 
 

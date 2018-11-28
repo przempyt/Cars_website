@@ -16,10 +16,10 @@
             	<li><a href="carform.html">ADD CAR</a><a href="manufform.html">ADD MANUFACTURER</a></li> -->
 
             	<!-- <li><a id="homeBTN" href="index.html">HOME</a></li> -->
-            	<li><a href="" id="homeBTN">HOME</a></li>
-            	<li><a href="" id="addcarBTN">ADD CAR</a><a href="" id="addmanufBTN">ADD MANUFACTURER</a></li>
-            	<li><a href="" id="showcarsBTN">SHOW CARS</a><a href="" id="showmanufBTN">SHOW MANUFACTURERS</a></li>
-            	<li><a href="" onclick="testing()">ALERT</a></li>
+            	<li><a id="homeBTN">HOME</a></li>
+            	<li><a id="addcarBTN">ADD CAR</a><a id="addmanufBTN">ADD MANUFACTURER</a></li>
+            	<li><a id="showcarsBTN">SHOW CARS</a><a id="showmanufBTN">SHOW MANUFACTURERS</a></li>
+            	<li><a id="alert" onclick="inform()">VORBIDDEN ALERT</a><a onclick="showDate()">DATE</a></li>
 
 
 
@@ -63,7 +63,7 @@
 
 
             		<div class="imagesContainer" align="centre" style="width: 80%;">
-            			<div class="column">
+            			<div class="imageP">
             				<img src="/images/porsche_carrera.jpg" alt="porsche_carrera" style="width:100%; border-radius: 2px">
             				<div class="overlay" >
             					<div class="text_im"><a class="linkPorsche" href="http://www.porsche.com">Order on the official website</a></div>
@@ -71,7 +71,7 @@
             			</div>
             			<p></p>
 
-            			<div class="column">
+            			<div class="imageP">
             				<img src="/images/porsche_cayman.jpg" alt="porsche_cayman" style="width:100%; border-radius: 2px">
             				<div class="overlay">
             					<div class="text_im"><a class="linkPorsche" href="http://www.porsche.com">Order on the official website</a></div>
@@ -80,7 +80,7 @@
 
             			<p></p>
 
-            			<div class="column">
+            			<div class="imageP">
             				<img src="/images/porsche_panamera.jpg" alt="porsche_panamera" style="width:100%; border-radius: 2px">
             				<div class="overlay">
             					<div class="text_im"><a class="linkPorsche" href="http://www.porsche.com">Order on the official website</a></div>
@@ -92,25 +92,10 @@
             		</div>
 
             		<p></p>
-            		<button onclick="changeImage()">Change image</button>
-            		<a id="desc"></a>
-
-
-            		<h2>Numbers:</h2>
-
-            		<ol class="lista" type="a">
-            			<li>one</li>
-            			<li>two</li>
-            			<li>three</li>
-            			<li>and so on...</li>
-            			<li><p id="date"></p></li>
-            		</ol>
-            		<button onclick="document.getElementById('date').innerHTML = Date()">
-            			Date
-            		</button>
-            		<p class="arttxt" style="width: 35%;margin: auto;">
-            		Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.Miskolc (Hungarian pronunciation: [ˈmiʃkolt͡s] (About this sound listen), Slovak/Czech: Miškovec, German: Mischkolz, Romanian: Mișcolț, Yiddish: מישקאָלץ‎ Mishkoltz) is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 (1st Jan 2014) Miskolc is the fourth largest city in Hungary (behind Budapest, Debrecen, and Szeged). It is also the county capital of Borsod-Abaúj-Zemplén and the regional centre of Northern Hungary.</p>
-
+            		
+            	
+            		<img id="gift" src="/images/porsche.gif"></img>
+            		
             	</div>
 
             	<fieldset id="manufield" style="display: none;"> 
@@ -130,6 +115,7 @@
 
             	</div>
 
+				<img id="gift" src="/images/porsche.gif"></img>
             </div>
 
         </body>

@@ -11,18 +11,8 @@ $(function () {
 			//	loadManuf();
 			},
 			error: function () {
-				alert("oopsyyy :/ cannot add manufacturer");
+				alert("oopsyyy :/ name already exists");
 			}
 		})
 	})
 });
-
-function testing(){
-	alert("testing function from manufform.js");
-}
-
-// $( "#manuform" ).submit(function( event ) {
-// 	event.preventDefault();
-//   alert( "Handler for .submit() called." );
-  
-// });
